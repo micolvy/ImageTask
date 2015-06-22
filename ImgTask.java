@@ -7,39 +7,39 @@ import java.io.IOException;
 public interface ImgTask {
 
 	/**
-	 * Ëõ·ÅÍ¼Æ¬
+	 * ç¼©æ”¾å›¾ç‰‡
 	 * 
 	 * @param zoomOutFactor
-	 *            Ëõ·ÅÒò×Ó 0.0 - 1.0: ËõĞ¡ ,1.0 - x.x: ·Å´ó
+	 *            ç¼©æ”¾å› å­ 0.0 - 1.0: ç¼©å° ,1.0 - x.x: æ”¾å¤§
 	 * @return
 	 */
 	public BufferedImage zoomImage(float zoomOutFactor);
 
 	/**
-	 * Í¼Ïñ»Ò¶È»¯
+	 * å›¾åƒç°åº¦åŒ–
 	 * 
 	 * @return
 	 */
 	public BufferedImage ColorToGray();
 
 	/**
-	 * Í¼Ïñ¶şÖµ»¯
+	 * å›¾åƒäºŒå€¼åŒ–
 	 */
 	public BufferedImage ColorToBinary();
 
 	/**
-	 * ¾ùÖµÂË²¨ ÊäÈë²ÊÉ«Í¼Ïñ,ÏÈµ÷ÓÃ·½·¨{@code public BufferedImage ColorToGray()}
-	 * È»ºóÓÃµÃµ½µÄ»Ò¶ÈÍ¼½øĞĞÄ£°åÎª 3x3µÄ¾ùÖµÂË²¨
+	 * å‡å€¼æ»¤æ³¢ è¾“å…¥å½©è‰²å›¾åƒ,å…ˆè°ƒç”¨æ–¹æ³•{@code public BufferedImage ColorToGray()}
+	 * ç„¶åç”¨å¾—åˆ°çš„ç°åº¦å›¾è¿›è¡Œæ¨¡æ¿ä¸º 3x3çš„å‡å€¼æ»¤æ³¢
 	 * 
-	 * @return ·µ»Ø¾ùÖµÂË²¨ºóµÄ»Ò¶ÈÍ¼
+	 * @return è¿”å›å‡å€¼æ»¤æ³¢åçš„ç°åº¦å›¾
 	 */
 	public BufferedImage AverFilter();
 
 	/**
-	 * Í¼Æ¬Áí´æÎª
+	 * å›¾ç‰‡å¦å­˜ä¸º
 	 * 
 	 * @param path
-	 *            ±£´æÂ·¾¶
+	 *            ä¿å­˜è·¯å¾„
 	 * @throws IOException
 	 * @throws FileNotFoundException
 	 */
